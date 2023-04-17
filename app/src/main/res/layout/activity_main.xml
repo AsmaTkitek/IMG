@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:translationX="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Votre taille (en cm)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <EditText
+            android:id="@+id/txtt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Votre poids (en kg)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="20dp"
+            android:translationY="20dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/txtp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Votre age"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="20dp"
+            android:translationY="20dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/txta"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:checkedButton="@+id/radio2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbFemme"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/femme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="10dp"
+            android:translationY="20dp"
+            app:buttonTint="#F44336" />
+
+        <RadioButton
+            android:id="@+id/rdbHomme"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/homme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="20dp"
+            android:translationY="20dp"
+            app:buttonTint="#3F51B5" />
+
+    </RadioGroup>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdfemme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/femme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible"/>
+
+        <RadioButton
+            android:id="@+id/rdhomme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/homme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible" />
+
+    </LinearLayout>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnc"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/calculer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:translationX="40dp"
+            android:visibility="visible"
+            app:backgroundTint="#4CAF50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        android:translationY="20dp">
+
+        <TextView
+            android:id="@+id/inter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interpr_tation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="50dp"
+            android:translationY="50dp"
+            android:visibility="visible"
+            app:autoSizeTextType="none"
+            tools:text="Interprétation : " />
+
+        <TextView
+            android:id="@+id/txtimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/votre_img_est"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:translationX="50dp"
+            android:translationY="70dp"
+            android:visibility="visible"
+            tools:text="Votre IMG est : " />
+
+    </LinearLayout>
+
+
+</LinearLayout>
